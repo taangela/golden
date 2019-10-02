@@ -19,7 +19,7 @@ img {
 }
 
 .bg-image {
-  background-image: url("../images/background_Image.png");
+  background-image: url("../images/background_image_hover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
