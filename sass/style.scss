@@ -1,6 +1,9 @@
 $main-font:'Montserrat', sans-serif;
 $title-font:'Playfair Display', serif;
+$transition: all 0.5s;
 
+
+/*General*/
 body {
   max-width: 1424px;
   margin: auto;
@@ -21,23 +24,18 @@ img{
   margin: 0 auto;
 }
 
+/*background*/
 .bg-image {
   background-image: url("../images/background_image_hover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
+  font-family: $main-font;
   position: relative;
 }
-/*.bg-image::before {
-    position: absolute;
-    content: '';
-    background-color: black;
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-}*/
 
+/*Navigation*/
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -60,28 +58,29 @@ img{
 }
 
 .menu-items li a{
-  /* Style for "Home" */
-  color: #ffffff;
-  font-family: $main-font;
   font-size: 14px;
   font-weight: 400;
   padding: 20px;
   display: inline-block;
   line-height: 2.9em;
+  color: #ffffff;
+}
+.menu-items li a:hover {
+  color: #fed136;
 }
 
+
+/*Intro-section*/
 .section-header {
   text-align: center;
 }
 
 .intro-section h1{
   margin : 0 0 70px 0;
-  font-family: $main-font;
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -1.88px;
-  color: #ffffff;
 }
 
 .intro-section p {
@@ -90,7 +89,6 @@ img{
   font-size: 40px;
   font-style: italic;
   letter-spacing: -1px;
-  color: #ffffff;
 }
 
 .btn-primary {
@@ -98,10 +96,14 @@ img{
   padding: 25px 50px;
   background-color: #fed136;
   border-radius: 3px;
-  color: #ffffff;
-  font-family: $main-font;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
+  color: #ffffff;
+  transition: $transition;
+}
+.btn-primary:hover {
+  background-color: #ffffff;
+  color:#fed136;
 }
