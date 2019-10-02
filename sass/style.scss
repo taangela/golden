@@ -24,6 +24,17 @@ img{
   margin: 0 auto;
 }
 
+.section-title {
+    font-size: 48px;
+    margin: 0 0 72px 0;
+    font-family: $font-text;
+}
+
+.section-subtitle {
+    font-size: 24px;
+    margin: 0 0 12px 0;
+}
+
 /*background*/
 .bg-image {
   background-image: url("../images/background_image_hover.png");
