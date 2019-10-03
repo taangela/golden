@@ -25,14 +25,22 @@ img{
 }
 
 .section-title {
-    font-size: 48px;
-    margin: 0 0 72px 0;
-    font-family: $font-text;
+  color: #222222;
+  font-family: $main-font;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 120px 0 0 0;
 }
 
 .section-subtitle {
-    font-size: 24px;
-    margin: 0 0 12px 0;
+  color: #777777;
+  font-family: $title-font;
+  font-size: 16px;
+  font-style: italic;
+  margin:0 0 80px 0;
 }
 
 /*background*/
@@ -117,4 +125,46 @@ img{
 .btn-primary:hover {
   background-color: #ffffff;
   color:#fed136;
+}
+
+/*services-section*/
+.services-section {
+  text-align: center;
+}
+
+ .services-section h4{
+  color: #222222;
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  margin:0;
+}
+
+ .services-section p{
+  color: #777777;
+  font-family: 'Roboto Slab';
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+  margin: 18px 0;
+  line-height: 20px;
+}
+
+.services-section img{
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50px;
+  border-color: #fed136;
+  overflow: hidden;
+}
+
+#icon-basket {
+  padding: 15px;
+}
+#icon-laptop{
+  padding: 15px 12px;
+}
+#icon-locked{
+  padding: 12px 20px 17px 20px;
 }

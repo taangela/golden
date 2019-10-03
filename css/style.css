@@ -19,6 +19,25 @@ img {
   margin: 0 auto;
 }
 
+.section-title {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 120px 0 0 0;
+}
+
+.section-subtitle {
+  color: #777777;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-style: italic;
+  margin: 0 0 80px 0;
+}
+
 /*background*/
 .bg-image {
   background-image: url("../images/background_image_hover.png");
@@ -106,5 +125,49 @@ img {
 .btn-primary:hover {
   background-color: #ffffff;
   color: #fed136;
+}
+
+/*services-section*/
+.services-section {
+  text-align: center;
+}
+
+.services-section h4 {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  margin: 0;
+}
+
+.services-section p {
+  color: #777777;
+  font-family: 'Roboto Slab';
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+  margin: 18px 0;
+  line-height: 20px;
+}
+
+.services-section img {
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50px;
+  border-color: #fed136;
+  overflow: hidden;
+}
+
+#icon-basket {
+  padding: 15px;
+}
+
+#icon-laptop {
+  padding: 15px 12px;
+}
+
+#icon-locked {
+  padding: 12px 20px 17px 20px;
 }
 /*# sourceMappingURL=style.css.map */
