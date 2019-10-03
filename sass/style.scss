@@ -43,6 +43,7 @@ section {
   text-transform: uppercase;
   letter-spacing: -1px;
   padding: 120px 0 0 0;
+  margin:0;
 }
 
 .section-subtitle {
@@ -135,8 +136,11 @@ section {
 }
 
 /*services-section*/
+.services-section{
+  padding-bottom: 120px;
+}
 .services-section .card {
-  margin-bottom: 30px;
+  padding: 0 15px;
 }
 
  .services-section h4{
@@ -150,14 +154,14 @@ section {
   font-weight: 400;
   letter-spacing: -0.35px;
   margin:0;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 /*portfolio-section*/
 .portfolio-section .card {
   background-color: #ffffff;
   padding:0;
-  margin:0 15px 50px;
+  margin:0 15px 120px;
 }
 .portfolio-section {
   background-color: #f7f7f7;
@@ -165,12 +169,18 @@ section {
 
 .portfolio-section .section-text{
   margin: 0;
+  padding: 30px 0;
 }
 
 .portfolio-section h4{
   margin: 0;
+  color: #333333;
 }
 
 .portfolio-section p{
   margin:0;
+  color: #737373;
+  font-size: 14px;
+  font-style: italic;
+  font-family: $title-font;
 }
