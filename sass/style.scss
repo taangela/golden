@@ -55,14 +55,17 @@ section {
 }
 
 /*background*/
-.bg-image {
-  background-image: url("../images/background_image_hover.png");
+.intro-section{
+  position:relative;
+}
+
+.image-bg {
+  /*background-image: url("../images/background_image_hover.png");*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff;
-  font-family: $main-font;
-  position: relative;
+  position: absolute;
+  z-index: -10;
 }
 
 /*Navigation*/
@@ -71,7 +74,9 @@ section {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
+  font-family: $main-font;
 }
+
 .brand, .brand img {
   display: block;
 }
@@ -83,14 +88,14 @@ section {
 }
 
 .menu-items li{
-  margin: 0 2px;
+  margin: 0;
   display: inline-block;
 }
 
 .menu-items li a{
   font-size: 14px;
   font-weight: 400;
-  padding: 20px;
+  padding: 15px;
   display: inline-block;
   line-height: 2.9em;
   color: #ffffff;
@@ -101,17 +106,19 @@ section {
 
 
 /*Intro-section*/
-
-.intro-section h1{
-  margin : 0 0 70px 0;
-  font-size: 75px;
+.intro-section .text-section {
+  color:#ffffff;
+}
+.intro-section .text-section h1{
+  margin : 20px 0 0;
+  font-size: 70px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -1.88px;
 }
 
-.intro-section p {
-  margin: 230px 0 30px 0;
+.intro-section .text-section p {
+  margin: 190px 0 0;
   font-family: $title-font;
   font-size: 40px;
   font-style: italic;
@@ -119,7 +126,7 @@ section {
 }
 
 .btn-primary {
-  margin-bottom: 170px;
+  margin: 50px 0 120px;
   padding: 25px 50px;
   background-color: #fed136;
   border-radius: 3px;
