@@ -66,6 +66,7 @@ section {
   background-size: cover;
   position: absolute;
   z-index: -10;
+  display: flex;
 }
 
 .image-bg::before {
@@ -255,11 +256,37 @@ section {
     transform: scale(1.2);
   }
 /*mobile*/
-/*@media (max-width: 767px) {
-  .big-box {
+@media (max-width: 767px) {
+  .page-header {
     flex-direction: column; }
 
-  .box-image {
+  .image-bg {
+    height: 100%;
+    }
+
+  .footer .container {
+    text-align: center;
+    }
+  .footer {
+    margin :20px 0;
+  }
+    .section-title {
+      padding-top: 70px;
+    }
+  .services-section .card {
+    margin-bottom: 60px;
+    }
+  .portfolio-section .container {
+    max-width: 90%;
+    }
+  .portfolio-section .card {
+    margin-bottom: 60px;
+  }
+  }
+
+
+
+/*  .box-image {
     position: relative;
     width: 100%;
     height: 150px; }
