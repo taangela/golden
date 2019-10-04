@@ -51,30 +51,24 @@ section {
 }
 
 /*background*/
-.intro-section {
-  position: relative;
-}
-
 .image-bg {
-  /*background-image: url("../images/background_image_hover.png");*/
+  background-image: url("../images/background_image_hover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-  z-index: -10;
-  display: -ms-flexbox;
-  display: flex;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
-.image-bg::before {
-  position: absolute;
-  content: '';
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
-}
-
+/*.image-bg::before {
+    position: absolute;
+    content: '';
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}*/
 /*Navigation*/
 .page-header {
   display: -ms-flexbox;
@@ -105,7 +99,7 @@ section {
 .menu-items li a {
   font-size: 14px;
   font-weight: 400;
-  padding: 15px;
+  padding: 40px 15px 15px;
   display: inline-block;
   line-height: 2.9em;
   color: #ffffff;
@@ -116,10 +110,9 @@ section {
 }
 
 /*Intro-section*/
-.intro-section .text-section {
-  color: #ffffff;
-}
-
+/*.intro-section .text-section {
+  color:#ffffff;
+}*/
 .intro-section .text-section h1 {
   margin: 20px 0 0;
   font-size: 70px;
@@ -129,7 +122,7 @@ section {
 }
 
 .intro-section .text-section p {
-  margin: 190px 0 0;
+  margin: 160px 0 0;
   font-family: "Playfair Display", serif;
   font-size: 40px;
   font-style: italic;
