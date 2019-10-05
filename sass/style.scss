@@ -54,7 +54,7 @@ section {
   margin:0 0 80px 0;
 }
 
-/*background*/
+/*Into-section background*/
 
 .image-bg {
   background-image: url("../images/background_image_hover.png");
@@ -111,11 +111,16 @@ section {
   color: #fed136;
 }
 
+.menu-items .icon {
+  display: none;
+  color: #ffffff;
+}
 
+.page-header{
+  display: inline-block;
+}
 /*Intro-section*/
-/*.intro-section .text-section {
-  color:#ffffff;
-}*/
+
 .intro-section .text-section h1{
   margin : 20px 0 0;
   font-size: 70px;
@@ -254,21 +259,78 @@ section {
   }
 /*mobile*/
 @media (max-width: 767px) {
-  .page-header {
+  /*.page-header {
     flex-direction: column; }
 
+  .menu-items li a {
+    padding: 10px;
+  }
+
+  .brand, .brand img {
+      padding-top: 30px;
+  }*/
+  .brand, .brand img {
+    padding: 5px 0 0;
+  }
+  .page-header {
+    display:block;
+  }
+  .menu-items li{
+    display:none;
+  }
+  .menu-items li a {
+    padding: 0;
+  }
+
+  .menu-items a.icon {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+.menu-items.responsive{
+  /*position: absolute;*/
+}
+  .menu-items.responsive li {
+    display:block;
+    text-align: center;
+    float: none;
+  }
+
+  .menu-items.responsive a.icon {
+    position:absolute;
+    right: 20px;
+    top: 15px;
+  }
+  .menu-items.responsive a{
+    float: none;
+  }
   .image-bg {
     height: 100%;
-    }
-
+  }
+  .intro-section .text-section p {
+      margin-top: 40px;
+      font-size: 20px;
+  }
+  .intro-section .text-section h1{
+      font-size: 50px;
+  }
   .footer .container {
     text-align: center;
-    }
+  }
   .footer {
     margin :20px 0;
   }
-    .section-title {
+  .section-title {
       padding-top: 70px;
+    }
+  .services-section {
+    padding-bottom: 40px;
+  }
+  .services-section .container {
+    max-width: 80%;
     }
   .services-section .card {
     margin-bottom: 60px;
@@ -278,49 +340,12 @@ section {
     }
   .portfolio-section .card {
     margin-bottom: 60px;
+    }
   }
-  }
 
-
-
-/*  .box-image {
-    position: relative;
-    width: 100%;
-    height: 150px; }
-
-  .box-description {
-    padding: 36px 5px 0 0;
-    text-align: left; }
-
-  section {
-    padding: 30px; }
-
-  .page-title {
-    font-size: 58px; }
-
-  .section-title {
-    margin-bottom: 30px;
-    margin-top: 30px;
-    font-size: 32px; }
-
-  .btn {
-    margin-top: 15px; }
-
-  .navigation ul li {
-    margin: 0 5px; }
-
-  .services .section-subtitle {
-    margin-top: 30px; }
-
-  .services p {
-    margin-bottom: 0; }
-
-  .services .btn {
-    position: static; }
-
-  .contact-details {
-    margin-top: 50px; }
-
-  .page-footer ul {
-    padding-left: 0; } }
-*/
+@media (min-width: 767px) and (max-width: 991px) {
+  .portfolio-section .container {
+    max-width: 90%;
+    padding: 0 15px;
+    }
+}
